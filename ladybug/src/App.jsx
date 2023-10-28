@@ -1,16 +1,28 @@
 import { useState } from 'react'
 import cover from './assets/img/mcover02.png';
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainLayout from './Layout/MainLayout';
+
 
 function App() {
 
   return (
-    <>
-    <h1>Hello World</h1>
-    <h4>This is the worlds first Fan Website of the series:</h4>
-    <h2>Miraculous: Tales of Ladybug & Cat Noir</h2>
-    <img src={cover} alt="coverimg" />
-    </>
+
+    <BrowserRouter>
+    <Routes>
+      <Route
+         path="/"
+          element={<MainLayout />}>
+          {/* <Route index element={<AllPages />} /> */}
+           {/* <Route path="/allpages" element={<AllPages />} /> */}
+            {/* <Route path="/national" element={<National />} /> */}
+           {/* <Route path="/article/:id" element={<OneArticle />} /> */}
+          {/* <Route path="/*" element={<NotFoundPage />} /> */}
+        {/* <Route path="/adminpage" element={<AdminPage />} /> */}
+      </Route>
+    </Routes>
+  </BrowserRouter>
   )
 }
 
