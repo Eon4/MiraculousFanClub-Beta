@@ -1,21 +1,20 @@
-
 .topnavigation {
-  position: fixed;  
-  top: 0;  // Stick to the top
+  // position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;  
+  width: 100vw; /* Use viewport width to cover the entire width of the screen */
   background-color: #333;
   color: #fff;
   padding: 10px 0;
-  z-index: 100; 
+  z-index: 100;
 }
 
 .topnavigation ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  margin: 0; 
-  padding: 0;  
+  margin: 0;
+  padding: 0;
 }
 
 .topnavigation ul li {

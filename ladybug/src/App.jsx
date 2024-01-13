@@ -1,8 +1,12 @@
 import { useState } from 'react'
-import cover from './assets/img/mcover02.png';
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
+import Homepage from './Pages/HomePage/homepage';
+import Gallery from './Pages/Gallery/gallery';
+import Fanfic from './Pages/Fanfic/fanfic';
+import BlogPage from './Pages/Blog/blog';
+import AboutPage from './Pages/About/about';
 
 
 function App() {
@@ -14,12 +18,12 @@ function App() {
       <Route
          path="/"
           element={<MainLayout />}>
-          {/* <Route index element={<AllPages />} /> */}
-           {/* <Route path="/allpages" element={<AllPages />} /> */}
-            {/* <Route path="/national" element={<National />} /> */}
-           {/* <Route path="/article/:id" element={<OneArticle />} /> */}
+          <Route index element={<Homepage />} />
+           <Route path="/gallery" element={<Gallery />} />
+            <Route path="/fanfic" element={<Fanfic />} />
+           <Route path="/blogpage" element={<BlogPage />} />
+           <Route path="/about" element={<AboutPage />} />
           {/* <Route path="/*" element={<NotFoundPage />} /> */}
-        {/* <Route path="/adminpage" element={<AdminPage />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>

@@ -1,19 +1,21 @@
-
+// MainLayout.jsx
 import React from 'react';
+import { Header } from "../Components/Header/header";
 import Navigation from '../Components/Navigation/nav';
-// import {Footer} from '../Components/Footer/footer'
 import { Outlet } from 'react-router-dom';
-
 
 const MainLayout = () => {
   return (
-    <div> 
-       <Navigation />
-         <main>
+    <div>
+      <header>
+      <Header />
+      <Navigation />
+      </header>
+
+      <main>
         <Outlet />
       </main>
-     {/* <Footer/> */}
-   </div>
+    </div>
   );
 };
 

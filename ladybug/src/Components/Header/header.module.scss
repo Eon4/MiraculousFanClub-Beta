@@ -1,0 +1,17 @@
+// header.module.scss
+
+.heroContainer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  // Center horizontally
+    justify-content: center;  // Center vertically
+  }
+  
+  .ladyBugHeader {
+    max-width: 100%; // Ensure the image does not exceed its container width
+  }
+  
+  
