@@ -8,9 +8,7 @@ import Fanfic from './Pages/Fanfic/fanfic';
 import BlogPage from './Pages/Blog/blog';
 import AboutPage from './Pages/About/about';
 
-
 function App() {
-
   return (
 
     <BrowserRouter>
